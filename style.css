@@ -1,0 +1,252 @@
+*{
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+body{
+    height: 95vh;
+}
+
+header{
+    width: fit-content;
+    padding: 1.5rem;
+}
+
+#logo-Alura{
+    height: 3rem;
+}
+
+
+main{
+    height: 75%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1.5rem;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.2rem;
+    background: #0A3871;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+.footer h5{
+    text-align: center;
+    background: #0A3871;
+    color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+
+
+section.input{
+    height: 100%;
+    margin-left: 10%;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding: 1rem;
+    width: 40%;
+}
+
+section.output{
+    height: 100%;
+    margin-right: 10%;
+    margin-left: auto;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding: 1rem;
+    width: 30%;
+    background: #FFFFFF;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px #00000014;
+}
+
+/* .div-textarea{
+
+}
+
+.div-botones{
+
+} */
+
+textarea.input-texto{
+    height: 100%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    color: #0A3871;
+}
+::placeholder{
+    color: #0A3871;
+}
+.input-texto:focus{
+    outline: none;
+    text-transform: lowercase;
+}
+.input-texto:focus::placeholder{
+    color: transparent;
+}
+
+textarea.output-texto{
+    height: 100%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    color: #0A3871;
+    background: #FFFFFF;
+    background-image: url(assets/img/Muñeco.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+.output-texto:focus{
+    outline: none;
+}
+textarea.output-texto::placeholder{
+    text-align: center;
+    font-size: 2rem;
+    color: #495057;
+    font-weight: bold;
+}
+
+
+.aclaracion{
+    font-size: 1.2rem;
+    display: flex;
+}
+.aclaracion img{
+    width: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+div.mensaje{
+    background: #FFFFFF;
+}
+
+div.mensaje p{
+    background: #FFFFFF;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #495057;
+    margin: 1rem 1rem;
+}
+
+.div-copiar{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #FFFFFF;
+}
+
+
+.botones{
+    display: flex;
+}
+
+.btn-encriptar{
+    font-size: 2rem;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 24px;
+    background: #0A3871;
+    color: #D8DFE8;
+    cursor: pointer;
+}
+.btn-desencriptar{
+    font-size: 2rem;
+    width: 20rem;
+    height: 5rem;
+    margin-left: 3rem;
+    margin-right: auto;
+    border-radius: 24px;
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+.btn-copiar{
+    font-size: 2rem;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 24px;
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1024px) {
+    *{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    body{
+        width: 90vw;
+    }
+    main{
+        display: block;
+        width: 80vw;
+    }
+    section.input{
+        display: block;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        margin-bottom: 20%;
+        padding: 0;
+    }
+    .div-textarea{
+        width: 100%;
+        height: 50%;
+    }
+    .input-texto{
+        width: 100%;
+        height: 100%;
+    }
+    section.output{
+        display: block;
+        border-radius: 32px;
+    }
+
+    .aclaracion{
+        font-size: 1rem;
+    }
+
+    .botones{
+        display: block;
+    }
+    .btn-encriptar{
+        margin: 0.5rem 1rem;
+    }
+    .btn-desencriptar{
+        margin: 0.5rem 1rem;
+    }
+
+    section.output{
+        display: block;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        margin-bottom: 10rem;
+        padding: 0;
+    }
+    textarea.output-texto{
+        background-image: none;
+        padding-top: 1rem;
+    }
+
+    footer{
+        display: flex;
+    }
+}
+
